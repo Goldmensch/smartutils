@@ -56,8 +56,9 @@ public final class SmartLocalizer<T>{
         return replaceToken;
     }
 
-    public void fromReader(LocalizationReader reader) {
+    public SmartLocalizer<T> fromReader(LocalizationReader reader) {
         addAll(reader.getLocalizations());
+        return this;
     }
 
     private String replace(String message, Replacement... replacements) {
