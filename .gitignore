@@ -1,0 +1,4 @@
+.gradle/
+.idea/
+**/build/
+core/src/main/java/de/goldmensch/smartutils/testplugin/
