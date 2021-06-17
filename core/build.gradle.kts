@@ -3,7 +3,7 @@ plugins {
     `maven-publish`
 }
 
-group = "de.goldmensch"
+group = "de.goldmensch.smartutils"
 version = "1.0"
 
 repositories {
