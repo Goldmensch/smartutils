@@ -35,12 +35,12 @@ public final class SmartLocalizer<T>{
     }
 
     public SmartLocalizer<T> addAll(Map<String, String> map) {
-        localizationMap.putAll(MapUtil.lowerMap(map));
+        localizationMap.putAll(MapUtil.lowerKeys(map));
         return this;
     }
 
     public SmartLocalizer<T> add(String key, String value) {
-        localizationMap.put(key.toLowerCase(), value.toLowerCase());
+        localizationMap.put(key.toLowerCase(), value);
         return this;
     }
 
