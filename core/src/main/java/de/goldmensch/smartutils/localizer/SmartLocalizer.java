@@ -2,7 +2,6 @@ package de.goldmensch.smartutils.localizer;
 
 import de.goldmensch.smartutils.localizer.adapter.LocalizerAdapter;
 import de.goldmensch.smartutils.localizer.reader.LocalizationReader;
-import de.goldmensch.smartutils.utils.MapUtil;
 
 import java.util.Locale;
 import java.util.Map;
@@ -35,12 +34,12 @@ public final class SmartLocalizer<T>{
     }
 
     public SmartLocalizer<T> addAll(Map<String, String> map) {
-        localizationMap.putAll(MapUtil.lowerKeys(map));
+        localizationMap.putAll(map);
         return this;
     }
 
     public SmartLocalizer<T> add(String key, String value) {
-        localizationMap.put(key.toLowerCase(), value);
+        localizationMap.put(key, value);
         return this;
     }
 
