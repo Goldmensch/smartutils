@@ -1,0 +1,3 @@
+name: SmartCollectionTest
+version: 1.0
+main: de.goldmensch.smartutils.testplugin.TestPlugin
